@@ -2,9 +2,9 @@
     grid-row: content-s/content-e;
     grid-column: s/e;
 
-   // &__page-title {
+    // &__page-title {
 
-   // }
+    // }
 
     &__form {
         display: grid;
@@ -21,12 +21,11 @@
         grid-row: email-s/email-e;
     }
     &__password {
-        grid-row:password-s/password-e;
         margin-top: 15px;
+        grid-row: password-s/password-e;
     }
     &__line {
         grid-row: line-s/line-e;
-        grid-column: 1/-1;
         border-top: 1px solid #ccc;
     }
     &__login {

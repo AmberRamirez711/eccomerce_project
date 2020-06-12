@@ -11,7 +11,7 @@
         transform: translateX(25px);
         grid-column: img-s/img-e;
         grid-row: 1/-1;
-    } 
+    }
 
     &__links {
         grid-column: links-s/links-e;
@@ -23,13 +23,14 @@
 
         color: #333;
         font-size: 16px;
-
+    
         & > * {
             grid-row: s/e;
         }
 
         margin-right: 47px;
     }
+
 }
 
 .green-text {
@@ -56,4 +57,5 @@
     & > * {
         grid-row: s/e;
     }
+
 }

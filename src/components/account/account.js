@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
-
 import * as actions from '../../actions';
+
 import AccountInformation from './accountInformation';
 import PurchaseHistory from './purchaseHistory';
 
@@ -14,12 +14,12 @@ class Account extends Component {
             {
                 _id: 0,
                 title: 'Shop',
-                path: './shop'
-            }, 
+                path: '/shop'
+            },
             {
                 _id: 1,
                 title: 'Logout',
-                path: './'
+                path: '/'
             }
         ]
 
@@ -28,16 +28,15 @@ class Account extends Component {
                 _id: 0,
                 title: 'Purchase History',
                 active: true,
-                component: <PurchaseHistory />
+                component: <PurchaseHistory/>
             },
-            {   
+            {
                 _id: 1,
                 title: 'Account Information',
                 active: false,
-                component: <AccountInformation />
-            },
+                component: <AccountInformation/>
+            }
         ]
-
 
         this.props.setHeaderLinks(headerLinks);
         this.props.setNavbarLinks(navbarLinks);
@@ -48,7 +47,7 @@ class Account extends Component {
         if(this.props.navbarLinks) {
             this.props.navbarLinks.forEach(link => {
                 if(link.active) {
-                    jsx = link.component
+                    jsx = link.component;
                 }
             })
         }
