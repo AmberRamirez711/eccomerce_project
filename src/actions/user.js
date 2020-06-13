@@ -1,4 +1,4 @@
-import { 
+import {
     SET_USER_PURCHASES,
     SET_PURCHASE_DETAIL
 } from './types';
@@ -16,8 +16,8 @@ export function fetchUserPurchases() {
         payload: [
             {
                 _id: 0,
-                amount: 8.40,
-                orderNumber: 'A0807878078',
+                total: 19.40,
+                orderNumber: 'A0048248343',
                 orderDate: new Date().toDateString(),
                 creditCard: '-0000',
                 user: {
@@ -27,82 +27,82 @@ export function fetchUserPurchases() {
             },
             {
                 _id: 1,
-                amount: 19.40,
-                orderNumber: '$FKTThfklsifous',
+                total: 1.30,
+                orderNumber: '24343sdfkjh72',
                 orderDate: new Date().toDateString(),
                 creditCard: '-0000',
                 user: {
-                    name: 'Max Hudgens',
-                    shippingAddress: '7920 West State lane'
+                    name: 'Maxwell Nelson',
+                    shippingAddress: '1337 West State Street'
                 }
             },
             {
                 _id: 2,
-                amount: 8.10,
-                orderNumber: '7878078',
+                total: 1.30,
+                orderNumber: 'B0048248343',
                 orderDate: new Date().toDateString(),
                 creditCard: '-0000',
                 user: {
-                    name: 'Tiffany Wilkonson',
-                    shippingAddress: '1234 South State Street'
+                    name: 'Jordan Hudgens',
+                    shippingAddress: '1234 West State Street'
                 }
             },
             {
                 _id: 3,
-                amount: 7.15,
-                orderNumber: 'Ahdusiowq76234',
+                total: 16.40,
+                orderNumber: 'ADFasdlfkjwe',
                 orderDate: new Date().toDateString(),
                 creditCard: '-0000',
                 user: {
-                    name: 'Brit Hall',
+                    name: 'Max Asher Nelson',
                     shippingAddress: '1234 West State Street'
                 }
             },
             {
                 _id: 4,
-                amount: 24.45,
-                orderNumber: 'NJOYO&&b',
+                total: 19.40,
+                orderNumber: 'A0048248343',
                 orderDate: new Date().toDateString(),
                 creditCard: '-0000',
                 user: {
-                    name: 'Josh Braiopsd',
-                    shippingAddress: '41 W Adams St'
+                    name: 'Jordan Hudgens',
+                    shippingAddress: '1234 West State Street'
                 }
             },
             {
                 _id: 5,
-                amount: 8.00,
-                orderNumber: 'B6786458',
+                total: 19.40,
+                orderNumber: 'A0048248343',
                 orderDate: new Date().toDateString(),
                 creditCard: '-0000',
                 user: {
-                    name: 'Adri Smitch',
-                    shippingAddress: '950 Sampson Way'
+                    name: 'Jordan Hudgens',
+                    shippingAddress: '1234 West State Street'
                 }
             },
             {
                 _id: 6,
-                amount: 9.50,
-                orderNumber: 'C67857469',
+                total: 19.40,
+                orderNumber: 'A0048248343',
                 orderDate: new Date().toDateString(),
                 creditCard: '-0000',
                 user: {
-                    name: 'Brit Regard',
-                    shippingAddress: '8975 Iron Cactus'
+                    name: 'Jordan Hudgens',
+                    shippingAddress: '1234 West State Street'
                 }
             },
             {
                 _id: 7,
-                amount: 7.15,
-                orderNumber: 'H7896579',
+                total: 3.20,
+                orderNumber: '5UFISHDFJ',
                 orderDate: new Date().toDateString(),
                 creditCard: '-0000',
                 user: {
-                    name: 'Oscar Holmes',
-                    shippingAddress: '7655 W State Ave'
+                    name: 'Andrew Wold',
+                    shippingAddress: '348 Yo State Street'
                 }
             },
-            
+
         ]
     })
 }
