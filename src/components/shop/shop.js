@@ -14,7 +14,7 @@ class Shop extends Component {
             }
         ]
         this.props.setHeaderLinks(headerLinks);
-        // fetch shop products action creator
+        this.props.fetchShopCategories();
         // fetch the header links
             //set the navbar links
     }
