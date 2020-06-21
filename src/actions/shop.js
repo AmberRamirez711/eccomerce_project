@@ -1,12 +1,21 @@
 import {
-    // SET_SHOP_CATEGORIES
+    SET_SHOP_CATEGORIES,
     SET_NAVBAR_LINKS,
-    SET_SHOP_PRODUCTS
+    SET_SHOP_PRODUCTS,
+    FILTER_PRODUCTS_WITH_CATEGORY_ID
 } from './types';
+
+export function filterProductsWithCategoryId(_id) {
+    console.log(_id);
+    return ({
+        type: FILTER_PRODUCTS_WITH_CATEGORY_ID,
+        payload: _id
+    })
+}
 
 export function fetchShopCategories() {
     return ({
-        type: SET_NAVBAR_LINKS,
+        type: SET_SHOP_CATEGORIES,
         payload: [
             {
                 _id: 0,
@@ -14,33 +23,30 @@ export function fetchShopCategories() {
             },
             {
                 _id: 1,
-                title: 'All'
+                title: 'JavaScript'
             },
             {
                 _id: 2,
-                title: 'Javascript'
-            },
-            {
-                _id: 3,
                 title: 'UI/UX'
             },
             {
-                _id: 4,
+                _id: 3,
                 title: 'Linux'
             },
             {
-                _id: 5,
+                _id: 4,
                 title: 'Python'
             },
             {
-                _id: 6,
+                _id: 5,
                 title: 'UML'
             },
             {
-                _id: 0,
+                _id: 6,
                 title: 'Ruby'
             },
         ]
+
     })
 }
 
