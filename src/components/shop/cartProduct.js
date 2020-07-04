@@ -9,11 +9,11 @@ class CartProduct extends Component {
         const { title, price } = product;
         return (
             <div className={`${className} cart-product`}>
-                <img className='cart-product__image' src='http://via.placeholder.com/130x130'/>
+                <img className='cart-product__image' src='http://via.placeholder.com/130x130' />
                 <div className='cart-product__title'>{title}</div>
-                <Quantity className='cart-product__quantity' quantity={quantity}/>
+                <Quantity className='cart-product__quantity' quantity={quantity} />
                 <a className='cart-product__remove'>Remove</a>
-                <GreenPriceTag className='cart-product__price' title={price}/>
+                <GreenPriceTag className='cart-product__price' title={price} />
             </div>
         )
     }
