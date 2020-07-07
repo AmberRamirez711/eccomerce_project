@@ -23,14 +23,15 @@ export function fetchCartProducts() {
     return ({
         type: SET_CART_PRODUCTS,
         payload: [
-            {   
+            {
                 _id: 0,
                 product: {
                     _id: 0,
-                    title: 'Javascript in the Browser',
-                    description: 'When JavaScript was created, it initially had another name: “LiveScript”. But Java was very popular at that time, so it was decided that positioning a new language as a “younger brother” of Java would help.',
+                    title: 'JavaScript in the Browser',
+                    description: 'The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. ... The running speed starts slowly, but gets faster each minute after you hear this signal.',
                     price: 1.99,
-                    belongsTo: [0, 1]
+                    belongsTo: [0, 1],
+                    imageUrl: 'http://via.placeholder.com/80x80'
                 },
                 quantity: 2
             },
@@ -39,9 +40,10 @@ export function fetchCartProducts() {
                 product: {
                     _id: 1,
                     title: 'Graph Database',
-                    description: 'When JavaScript was created, it initially had another name: “LiveScript”. But Java was very popular at that time, so it was decided that positioning a new language as a “younger brother” of Java would help.',
+                    description: 'The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. ... The running speed starts slowly, but gets faster each minute after you hear this signal.',
                     price: 1.99,
-                    belongsTo: [0, 6]
+                    belongsTo: [0, 6],
+                    imageUrl: 'http://via.placeholder.com/80x80'
                 },
                 quantity: 1
             },
@@ -133,7 +135,7 @@ export function fetchUserPurchases() {
             {
                 _id: 7,
                 total: 3.20,
-                orderNumber: '5UFISHDFJ',
+                orderNumber: '5UFISHDFJASUSHI298',
                 orderDate: new Date().toDateString(),
                 creditCard: '-0000',
                 user: {
